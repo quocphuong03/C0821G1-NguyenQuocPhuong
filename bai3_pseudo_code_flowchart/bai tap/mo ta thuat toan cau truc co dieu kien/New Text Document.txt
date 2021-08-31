@@ -1,0 +1,15 @@
+Begin
+  Input type 
+  IF (score => 75)
+         grade = "A";
+  ELSE IF (score <= 60)
+          grade = "B";
+  ELSE IF (score <=45)
+          grade = "C";
+  ELSE IF (score  <= 35)
+          grade = "D";
+  ELSE  
+          grade = "F";
+END IF
+
+  

@@ -1,0 +1,11 @@
+Begin
+     INPUT average
+     IF average >= 9
+            Display exellent
+     ELSE IF average >= 7
+            Display good
+     ELSE IF average >= 6
+            Display average
+     ELSE
+            DISPLAY below
+     END IF

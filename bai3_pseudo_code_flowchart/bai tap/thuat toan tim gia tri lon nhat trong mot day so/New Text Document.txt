@@ -1,0 +1,15 @@
+Begin 
+  Input n
+  Input a1,...,aN
+  IF Max<-a1,a2,...,aN
+  ELSE IF i>N
+       DISPLAY "max a1"
+  ELSE IF 
+       DISPLAY a1 = max
+  ELSE
+       WHILE (ai>max)  
+       Do 
+          DISPLAY ai = max
+    END DO
+   END IF
+END

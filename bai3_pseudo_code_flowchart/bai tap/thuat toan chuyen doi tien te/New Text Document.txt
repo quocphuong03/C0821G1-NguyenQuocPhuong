@@ -1,0 +1,7 @@
+Begin
+  Input USD = 1, VND = 23000
+  IF (lua chon)
+  ELSE IF ("nhap so tien can doi ra VND")
+       DISPLAY sotiendoi = usd1 * 23000
+  ELSE
+END
