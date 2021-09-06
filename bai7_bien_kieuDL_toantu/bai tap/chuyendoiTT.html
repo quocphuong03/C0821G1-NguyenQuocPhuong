@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <from>
+        <input type="text" id="amount">
+        <select id="s1">
+            <option value="vnd">VND</option> 
+            <option value="usd">USD</option>
+             
+        </select> Form Curency
+        <select id="s2">
+            <option value="usd">USD</option>
+            <option value="usd">VND</option>
+            </select> To Currency
+        <input type="button" value="convert" oneclick="switchMoney();">
+        </from>
+        <p id="abc"></p>
+        <script>
+            function switchMoney(){
+        let a = document.getElementById('VND').value;
+        let A = parseInt(a);
+        let B = A * 23000;
+        let C = A / 23000;
+        let X = document.getElementById('s1').value;
+        let Y = document.getElementById('s2').value;
+        if (X===Y)
+        document.getElementById('abc').innerHTML = "Giá trị đổi được =" + A;
+        else if (X==="vnd" && Y==="usd")
+            document.getElementById('abc').innerHTML = "Giá trị đổi được =" + C;
+        else
+            document.getElementById('abc').innerHTML = "Giá trị đổi được =" + B;
+    }
+
+</script>
+        </script>
+       
+    
+
+</body>
+</html>
