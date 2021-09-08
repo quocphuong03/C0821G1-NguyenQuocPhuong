@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="maudo.jfif" onclick="changeImg(1)" id="CarA" width="250 px" height="600px" >
+    <img src="mauvang.ipg.jfif" onclick="changeImg(2)" id="CarB" width="250 px" height="600px"> 
+    <img src="mauxanh.jfif" onclick="changeImg(3)" id="CarC" width="250 px" height="600px" >
+    <script>
+       function changeImg(num) {
+           let img1 = document.getElementById('carA').getAttribute('src');
+           let img2 = document.getElementById('carB').getAttribute('src');
+           let img2 = document.getElementById('carC').getAttribute('src');
+           switch (num) {
+               case 1: {
+                   if (img1 === "maudo.jfif") {
+                       document,getElementById('carA').src = "maudo.jfif";
+                   } else if (img1 === "maudo.jfif") {
+                    document,getElementById('carA').src = "mauxanh.jfif";
+                   } else {
+                       document.getElementById('carA').src = "maudo.jfif";
+                   }
+                   break;
+               }
+               case2: {
+                if (img2 === "maudo.jfif") {
+                    document.getElementById('carB').src = "mauxanh.jfif";
+                } else if (img2 === "mauxanh.jfif") {
+                    document.getElementById('carB').src = "mauvang.ipg.jfif";
+                } else {
+                    document.getElementById('carB').src = "maudo.jfif";
+                }
+                break;
+               }
+                   if (document.getElementById('carA').getAttribute('src') === "maudo.jfif"
+                   && document.getElementById('carB').getAttribute('src') === "mauvang.ipg.jfif"
+                    && document.getElementById('carC').getAttribute('src') === "mauxanh.jfif"
+                    && document.getElementById('carD').getAttribute('src') === "maudo.jfif"
+                   
+
+       }
+    </script>
+</body>
+</html>
