@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = 'c'
+        var TRUOC = "The Quick Brown Fox";
+        var SAU = "tHE qUICK bROWN fOX";
+        var result = [];
+            
+
+            for(var x=0; x<str.length; x++)
+            {
+                if(TRUOC.indexOf(str[x]) !== -1)
+                {
+                    result.push(str[x].toLocaleLowerCase(''));
+                }
+                else if(SAU.indexOf(str[x]) !== -1);
+                {
+                    result.push(str[x].toLocaleUpperCase(''));
+                }
+                else
+                {
+                    result.push(str[x]);
+                }
+            }
+            console.log(result.join(''));
+    </script>
+</body>
+</html>
