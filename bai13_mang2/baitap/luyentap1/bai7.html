@@ -7,8 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    <sccript>
-        
-    </sccript>
+    <script>
+        let array = Array(3);
+        let index;
+        let check = false;
+        for (let i = 0; i < array.length; i++) {
+            let number = parseInt(prompt('nhập số nguyên thứ ' + (i + 1)));
+            array[i] = number;
+        }
+        let v = parseInt(prompt('Nhập số nguyên v'));
+        for (let i = 0; i < array.length; i++) {
+            if (v === array[i]) {
+                check = true;
+                index =i;
+            }
+        }
+        if (check) {
+            array.splice(index, 1);
+            array.push(0);
+            document.write(array.toString());
+        } else {
+            alert('v ko thuộc mảng')
+        }
+    
+    </script>
 </body>
 </html>

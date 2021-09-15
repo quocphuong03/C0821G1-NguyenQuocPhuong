@@ -2,20 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <script>
-        let txt = prompt('nhập vào 1 chuỗi');
-        let  total= 0;
-        array.trim();
-        for ( let i= 0; i<array.length; i++) {
-            if ((array [i]!==" ")&&(array[i+1]==="")) {
-                total += 1;
-            }
-        }alert(" có + total + từ trong ");
+      let str = prompt("Một Hai Ba");
+      let wordCount = str.match(/(\w+)/g).length;
+        alert('Số từ trong chuỗi của bạn là ' +wordCount);
         
     </script>
 </body>
