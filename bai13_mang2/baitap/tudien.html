@@ -2,25 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <input type="text" id="td1"/>
-    <input type="button" value="dich" onclick="trans()"/>
-    <p id="result"></p>
+    <button onclick="button" ovclick="seachText()"> Seach </button>
+    <h2 id="result"> Kết quả: </h2>
+</body>>
     <script>
-        let ENG=["One","Two","There"];
-        let VIE=["Mot","Hai","Ba"];
+        let ar1 = ["One","Two","There"];
+        let arr2 = ["Mot","Hai","Ba"];
 
-        function trans(){
-            let engLish = document.getElementById("td1").value;
-            for(let i =0; i<eng.length; i++) {
-                if (eng[i] === engLish) {
-                    document.getElementById("result").innerHTML= vnm[i];
+        function searchText() {
+            let text = document.getElementById("td1").value;
+            let index = -1 ;
+            for (let i =0; arr2.length; i++) {
+                if (arr[i] === text) {
+                    index = i;
                 }
             }
+            if (index === -1) {
+                document.getElementById("result").innerText = "Not found";
+            } else {
+                document.getElementById("result").innerText= arr1[index];
+            }
+            
         }
     </script>
   
