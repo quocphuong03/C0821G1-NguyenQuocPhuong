@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let c=parseInt(prompt("Nhập bán kính hình tròn"));
+    let a=dienTich(c);
+    let b=chuVi(c);
+    alert("Diện tích hình tròn ="+ a + " Chu vi hình tròn = "+b);
+    function dienTich(num){
+        return num*num*3.14;
+    }
+    function chuVi(num){
+        return 2*num*3.14;
+    }
+    </script>
+</body>
+</html>
