@@ -8,9 +8,27 @@
 </head>
 <body>
    <script>
-    let star1 = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus']
-    let star2 = ['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo']
-   
+    let a = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus']
+    let b = ['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo']
+    let c = prompt('nhap vao giá trị muốn tìm');
+    function find(x)
+    {
+        for(let i=0;i<a.length;i++)
+        {
+            if(x ==a[i])
+            {
+                x=i;
+                alert('Ngôi sao bạn muốn tìm thuộc chòm sao '+b[x])
+                break;
+            }
+            else
+            {
+                alert('Không tìm thấy ngôi sao này');
+                break;
+            }
+        }
+    }
+    find(c);
    </script>
 </body>
 </html>
