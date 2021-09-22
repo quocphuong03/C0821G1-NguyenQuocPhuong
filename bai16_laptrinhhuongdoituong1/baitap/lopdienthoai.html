@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Mobile{
+        constructor(pin){
+            this.pin=pin;
+            this.soan=[];
+            this.goi=[];
+            this.nhan=[];
+            this.status=false;
+        }
+        checkPin=function(){
+            return this.pin;
+        };
+        checkOn= function(){
+            if(this.pin>0){
+                return "On";
+            }else{
+                return "Off";
+            }
+        };
+        turnOnOff=function(){
+             return !this.status;
+        };
+        makeMessage=function(){
+            this.pin--;
+            let texting= prompt("Soạn tin nhắn");
+            this.soan.push(texting);
+            return texting;
+        };
+        receiveMessage=function(mobile){
+            this.pin--;
+            this.nhan.push(mobile.sentMessage());
+        };
+        getSentMessage=function(){
+            this.pin--;
+            return this.goi;
+        }
+    }
+    let nokia=new Mobile(100);
+    let iphone=new Mobile(90);
+
+    </script>
+</body>
+</html>

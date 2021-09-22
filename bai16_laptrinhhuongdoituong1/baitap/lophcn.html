@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas1" width="350" height="450"></canvas>
+    <script>
+        class Rectangle {
+            constructor(dai,rong) {
+                this.dai = dai;
+                this.rong = rong;
+            }
+            getDai(){
+                return this.dai
+            }
+            getRong(){
+                return this.rong
+            }
+            setDai(Dai) {
+                this.dai = Dai
+            }
+            setRong(Rong){
+                this.rong = Rong
+            }
+            tinhChuvi(){
+                document.write('Chu vi '+(this.dai+this.rong)*2)
+            }
+            tinhDientich(){
+                document.write('Dien tich' (this.dai*this.rong)*2)
+            }
+            veCanvas() {
+                var canvas = document.getElementById('canvas1');
+                var ctx = canvas.getContext('2d');
+                ctx.rect(100,100,this.dai,this.rong);
+                ctx.stroke();
+
+            }
+        }
+        let rectangle = new Rectangle(200,100);
+        ractangle.veCanvas();
+        document.wwrite('<br>');
+        rectangle.setDai(300);
+        rectangle.setRong(150);
+        reactangle.tinhdientich()
+        document.write('<br>');
+        rectangle.tinhChuvi();
+
+    </script>
+</body>
+</html>
