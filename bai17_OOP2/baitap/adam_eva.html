@@ -8,69 +8,32 @@
 </head>
 <body>
     <script>
-       class Apple{
-        this.weight = 10;
-        this.decrease = function () {
-            this.weight = (this.weight - 1);
-        };
-        this.getWeight = function () {
+      class Apple{
+        constructor() {
+            this.weight = 10;
+        }
+
+        getWeight() {
             return this.weight;
-        };
-        this.isEmpty = function () {
-            if (this.weight > 0) {
-                return true;
-            }
-            return false;
-        };
-    };
+        }
+
+        setWeight(value) {
+            this.weight = value;
+        }
+        decrease(){
+            this.weight--;
+        }
+        kiemTra(){
+            document.write('Khối lượng của quả táo bây giờ là '+this.weight)
+        }
+    }
     class Human{
-        this.gender = gender;
+        constructor(name,gender,weith) {
+            this.gender = gender;
         this.name = name;
         this.weight = weight;
-        this.isMmale = function () {
-            return this.gender;
-        };
-        this.setGender = function (bool) {
-            this.gender = bool
-        };
-        this.eat = function (apple) {
-            apple.decrease();
-        };
-        this.say = function (string) {
-            return this.name + ": " + string;
-        };
-        this.getName = function () {
-            return this.name;
-        };
-        this.setName = function (string) {
-            this.name = string;
-        };
-        this.getWeight = function () {
-            return this.weight;
-        };
-        this.setWeight = function (number) {
-            this.weight = number;
-        };
-    };
-
-    let eva = new Human(false, "eva", 45);
-    console.log(eva);
-    let adam = new Human(true, "adam", 60);
-    console.log(adam);
-    let appleInTheHeaven = new Apple();
-    console.log(appleInTheHeaven);
-
-    console.log(adam.say("chào em"));
-    console.log(eva.say("chào anh"));
-    console.log(adam.say("em ăn cơm chưa"));
-    console.log(eva.say("ăn rồi"));
-    while (appleInTheHeaven.weight > 0) {
-        console.log("adam bị chê nhạt");
-        adam.eat(appleInTheHeaven);
-        console.log("eva block adam");
-        eva.eat(appleInTheHeaven);
-    }
-    console.log("2 người là người dưng")
+        }
+        
     </script>
 </body>
 </html>
